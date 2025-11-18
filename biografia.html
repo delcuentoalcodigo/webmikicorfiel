@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Biografía</title>
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>  
+  <body>
+   <header>
+    <nav>
+    <ul>
+		<li><a href="https://mikicorfiel.glitch.me/#">Miki Corfiel</a></li>
+		<li><a href="biografia.html">Bio</a></li>
+		<li><a href="https://mikicorfiel.glitch.me/obra.html">Obra</a></li>
+		<li><a href="talleres.html">Talleres</a></li>
+		 </ul>
+    </nav>
+</header>
+     
+    <h2>
+      <br>
+      <br>
+      <br>
+      <br>Artista digital (live coder), artivista, poeta, narradora y educadora popular. 
+      <br>Publiqué el cuento Medianeras, el poemario Crisálida, y el fanzine ¿Somos?.
+      <br>Participé de performances, talleres y obras de teatro en Argentina, Uruguay y Berlín, para Conurbeat, Festival Aura, Jauría Mutante, Manijas Percusión, Spam Arts, Fábrica Palmera, CCEBA Media Lab, Sorora.e.V y KBB Club.
+      <br>
+      <br>Me formé en talleres de escritura creativa y poesía en Argos Cultural, arte digital en Wip arte digital y CCEBA Media Lab. 
+      <br>Actualmente me estoy formando como docente en la UDE.
+      <br>
+      <br>En mi práctica pienso que programar también es escribir y en mis talleres de programación creativa me interesa compartir lo que fui aprendiendo desde un lugar amable y accesible.
+    </h2>
+    
+    <h6>
+       <br><a href="cv.html">CV artístico</a>
+    </h6>
+       
+<canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(osc(3,0.3,4))
+.mask(shape(2,0.01).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+    <footer>
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/mariamicaela.corfielrecalde/"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/mikicorfiel/"><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/channel/UCrWqiHpPwi1HF-U5XOJECzw/videos"><i class="fa fa-youtube"></i></a>
+<a href="https://www.tiktok.com/@mikicorfiel"><i class="bi bi-tiktok"></i></a>
+</div>
+</div>
+</footer>
+    </body>
+    </html>
